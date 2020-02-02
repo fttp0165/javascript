@@ -20,14 +20,11 @@ This is a regular paragraph.
 
 ####攻略:
 使用DOM 操作
-createElement()
-setAttribute()
-appendChild()
+**createElement()**
+**setAttribute()**
+**appendChild()**
 for 迴圈 與 if 判斷式 完成 等等 javascript的方式
 建立出9X9乘法表
 --------------------------------------------------------------------
 ＃＃＃＃＃個人覺得自己不足要加強的部分是 CSS
 ---------------------------------------------------------------------
-Codepen 如下
-
-https://codepen.io/fttp0165/pen/zYxXQBX
