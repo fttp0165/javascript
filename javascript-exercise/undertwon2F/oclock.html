@@ -18,79 +18,304 @@
              }
     #BackGround{
                 float: left;
+                 width: 350px;
+                 height: 350px;
                 position: relative; 
                 top:225px;
+                right: 465px;
                 left:465px;
                 z-index:10;
-
+      
               }
-    #circle{
+    /* #circle{
              float: left;
              position: relative; 
-             top:470px; /*470*/
-             left:214px; 
+             top:396px; /*470*/
+             /* left:288px; 
              width:  5px;
              height: 5px;
              background: white 0% 0% no-repeat padding-box;
              z-index:20;
              align-self: center;
-           }
+           } */ 
     #second{
              position: relative; 
              float:left;
-             top:382px; /*470*/
-             left:210px;
-             width: 2px;
-             height: 90px;
+             top:400px; /*470*/
+             left:280px;
+             width: 12px;
+             height: 80px;
              z-index:30;
-             transform-origin:0 100%;
-             background: greenyellow 0% 0% no-repeat padding-box;
-             transform:rotate(0deg);
+             transform-origin:50% 0%;
+             background: 0% 0% no-repeat padding-box;
+             transform:rotate(180deg);
              opacity: 1;
       }  
 
       #min{
              position: relative; 
              float:left;
-             top: 395px;
-             left: 205px;
-             width: 7px;
-             height: 80px;
+             top: 305px;
+             left: 270px;
+             width: 8px;
+             height: 96px;
              z-index:40;
              transform-origin:0 100%;
-             background: blue 0% 0% no-repeat padding-box;
+             background: 0% 0% no-repeat padding-box;
              transform:rotate(0deg);
              opacity: 1;
       }  
+
+    #hour{
+             position: relative; 
+             float:left;
+             top: 323px;
+             left: 262px;
+             width: 8px;
+             height: 72px;
+             z-index:30;
+             transform-origin:0 100%;
+             background: 0% 0% no-repeat padding-box;
+             transform:rotate(0deg);
+             opacity: 1;
+      
+
+    }
+    #oclock{
+                  float: left;
+                 width: 400px;
+                 height: 400px;
+                position: relative; 
+                top:0px;
+                left: -600px;
+                z-index:1500;
+
+
+    }
+    #currentTime{
+                                  position: relative; 
+                                  float:left;
+                                   top: 700px;
+                                   left: 10px;
+                                   width: 300px;
+                                  height: 80px;
+                                  background-color: plum;
+                                  z-index:1000;
+                                  border:5px solid #FF5511;
+                                 }
+
+
+      #Chour{
+                        float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: yellow;
+      }
+      #Cmin{
+                         float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: skyblue;
+      }
+      #Csecond{
+                        float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: #E38EFF;
+                        color:black;
+      }
+     
+     #CsecondP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+     #CminP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+
+     #ChourP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+
+
+     #SetTime{
+                                 position: relative; 
+                                  float:left;
+                                   top: 600px;
+                                   left: -300px;
+                                   width: 300px;
+                                  height: 80px;
+                                  background-color: #FF8800;
+                                  z-index:1000;
+                                  border:5px solid 	#A3E0C3	;
+                                  z-index:1500;
+     }
+
+     #SetTime .timeH{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:yellow ;
+     }
+  
+     #SetTime .set{
+                        width: 50px;
+                        height: 30px;
+                        vertical-align: middle;
+                        line-height: px;
+                        text-align: center;
+                        border:5px solid  #A3E0C3;
+     }
+     #SetTime .timeM{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:skyblue ;
+     }
+     #SetTime .timeS{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:#E38EFF ;
+     }
+     #SetTime .reset{
+                        position: relative; 
+                        float:left;
+                        left:222px;
+                        top:-5px;
+                        width: 60px;
+                        height: 30px;
+                        vertical-align: middle;
+                        line-height: px;
+                        text-align: center;
+                        border:5px solid  #A3E0C3;
+     }
+      /* #lineX{
+                    position: relative; 
+                    float:left;
+                    top: 399px;
+                    left: 0px;
+                    width: 1280px;
+                    height: 1px;
+                    z-index:500;
+                    background-color: pink;
+                }
+        #lineY{
+                    position: relative; 
+                    float:left;
+                    top: 0px;
+                    left: 641px;
+                    width: 1px;
+                    height: 800px;
+                    z-index:500;
+                    background-color: pink;
+                } */
     </style>
 
     <script type="text/javascript">
     window.onload=function(){
-      var angleSec=354;
+     
       var secondPoint=document.getElementById('second');
       var minPoint=document.getElementById('min');
-      var anglemin=354;
-      minPoint.style.transform ='rotate('+anglemin+'deg)';
-      setInterval(function(){
-         
-            if(angleSec>=360)
-                {
-                    angleSec=0;
-                    anglemin+=6;
-                    if(angleSec>=360)
-                      {
-                        anglemin=0;
-                      } 
-                    minPoint.style.transform ='rotate('+anglemin+'deg)';
-                }
+      var hourPoint=document.getElementById('hour');
 
-            console.log(angleSec/6+'sec');
-            var newAngle=angleSec+'deg';
-            secondPoint.background='blue';
-            secondPoint.style.transform ='rotate('+newAngle+')';
-            angleSec+=6;
-            console.log(newAngle);
-            console.log(anglemin);
+      //取得數位顯示標籤
+      var CCsecond=document.getElementById('CsecondP');
+      var CCmin=document.getElementById('CminP');
+      var CChour=document.getElementById('ChourP');
+      var oSet=document.getElementsByClassName('set');
+      var oRset=document.getElementsByClassName('Reset');
+      CCsecond.innerHTML=0;
+      CCmin.innerHTML=0;
+      CChour.innerHTML=0;
+      var angleFSec=180
+      var angleFmin=0;
+      var angleFhour=0;
+
+      //----------------------------------------
+      //init Time
+      //----------------------------------------
+      var oTotalsec=14100;
+      var oChour=Math.floor(oTotalsec/3600);
+      var oCmin=Math.floor((oTotalsec/60)%60);
+      var oCsecond=Math.floor(oTotalsec%60);
+      var isAm=true;
+       //----------------------------------------
+      //init  Angle
+      //-----------------------------------------
+      angleFSec=180+(oCsecond*6);
+      if(angleFSec>=540){ angleFSec=180;}
+      angleFmin=oCmin*6;
+      angleFhour=(oChour*30)+Math.floor((angleFmin-50)/12);
+      secondPoint.style.transform ='rotate('+angleFSec+'deg)';
+      minPoint.style.transform ='rotate('+angleFmin+'deg)';
+      hourPoint.style.transform ='rotate('+angleFhour+'deg)';
+
+      setInterval(function(){
+                                                      oCsecond+=1;
+                                                      if(oCsecond>=60)
+                                                           {
+                                                             oCsecond=0;
+                                                             oCmin+=1;
+                                                             if(oCmin>=60)
+                                                                 {
+                                                                   oCmin=0;
+                                                                   oChour+=1;
+                                                                    if(oChour>=12)
+                                                                       {
+                                                                        oChour=0;
+                                                                        isAm=!(isAm);
+                                                                       }
+                                                                  }
+                                                            }
+         
+                                                        angleFSec=180+(oCsecond*6);
+                                                        if(angleFSec>=540){ angleFSec=180;}
+                                                        angleFmin=oCmin*6;
+                                                        angleFhour=(oChour*30)+Math.floor((angleFmin-50)/12);
+                                                        console.log(angleFhour);
+                                                        secondPoint.style.transform ='rotate('+angleFSec+'deg)';
+                                                        minPoint.style.transform ='rotate('+angleFmin+'deg)';
+                                                        hourPoint.style.transform ='rotate('+angleFhour+'deg)';
+                                                    
+            
+                 //Digital sec
+
+                    CCsecond.innerHTML=(oCsecond);
+                    CCmin.innerHTML=parseInt(oCmin);
+                    CChour.innerHTML=parseInt(oChour);
+
+           // secondPoint.style.transform ='rotate('+newAngle+')';
+            
       },1000);
 
     }
@@ -98,10 +323,29 @@
 </head>
 <body>
      <div id="AllBoard">
-     <img id="BackGround" src="D:\Program Files\javascript\javascript-exercise\undertwon2F\pivture\clock-bg.png">
-     <div id="circle"></div>
-     <div id="second"></div>
-     <div id="min"></div>
+    <div id="lineX"></div>
+    <div id="lineY"></div>
+    <div id="currentTime">
+    <div id= "Chour"><p id="ChourP"></p></div>
+    <div id= "Cmin"><p id="CminP"></p></div>
+    <div id= "Csecond"><p id="CsecondP"></p></div>
+    </div>
+
+    <div id="SetTime">
+       <input class="timeH"  type="text" value="3">
+       <input class="timeM" type="text" value="3">
+       <input class="timeS"type="text" value="3">
+       <input class="set" type="button" value="Set">
+       <input class="reset"type="button" value="Reset">
+      </div>
+
+    <div id="oclock">
+     <img id="BackGround" src=".\picture\clock-bg.png">
+     <!-- <div id="circle"></div> -->
+     <img  id="second"  src=".\picture\second-hand.png"></img>
+     <img  id="min" src=".\picture\minute-hand.png"></img>
+     <img  id="hour" src=".\picture\hour-hand.png"></img>
+    </div>
     </div>
 </body>
 </html>
