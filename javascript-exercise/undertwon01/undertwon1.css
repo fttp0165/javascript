@@ -1,0 +1,160 @@
+    /* <style type=text/css> */
+     *{
+         margin: 0;
+         padding:0;
+     }
+
+   #allBoard{
+                  width:1280px;
+                  height:1372px;
+                  background:#F0F0F0 no-repeat padding-box;
+                  margin-left: 55px;
+            }
+   #allBoard #first{
+                    width:350px;
+                    height:366px;
+                    float: left;
+                    margin-left: 10px;
+                    padding-left:20px;
+                    padding-top:30px;
+                    }
+   #allBoard #block{
+                    width:350px;
+                    height:366px;
+                    background:#FFFFFF 0% 0% no-repeat padding-box;
+                    box-shadow: 0px 3px 10px #D8D8D8;
+                    border-radius: 100px 0px 30px 0px;
+                    opacity: 1;
+                    float: left;
+                    margin-left: 35px;
+                    margin-top: 40px;
+                    }
+    .firstX{
+             position: absolute;
+             width:14px;
+             height:28px;
+             top: 50px;
+             left:85px;
+             color:#2EB738;
+           }
+    .secondX{
+             position: absolute;
+             width:14px;
+             height:28px;
+             top: 50px;
+             left:425px;
+             color:#2EB738;
+           }
+    .thirdX{
+             position: absolute;
+             width:14px;
+             height:28px;
+             top: 380px;
+             left:85px;
+             color:#2EB738;
+           }
+    .fourthX{
+             position: absolute;
+             width:14px;
+             height:28px;
+             top: 380px;
+             left:425px;
+             color:#2EB738;
+           }
+     .wordLine{
+               width: 280px;
+               height: 78;
+               color:#2EB738;
+               position: absolute;
+               font-size:56px ;
+               top: 170px;
+               left: 120px;
+               text-align: center;
+               letter-spacing: 0;
+              }
+     .wordLine2{
+               width: 320px;
+               height: 28;
+               color:#2EB738;
+               position: absolute;
+               font-size:24px ;
+               top: 250px;
+               left: 110px;
+               text-align: center;
+         
+              }
+    .lineU{
+            width: 280px;
+            height: 1px;
+            border-top: solid #2EB738 1px; 
+            position: absolute;
+             top: 63px;
+             left:120px;
+             margin: 0;
+          }
+    .lineD{
+            width: 280px;
+            height: 1px;
+            border-top: solid #2EB738 1px; 
+            position: absolute;
+             top: 393px;
+             left:120px;
+             margin: 0;
+          }
+    span{
+          color:#2EB738;
+          text-align: left;
+          font: Bold 128px/128px Helvetica Neue;
+          text-shadow: 4px 3px 0px #F0F0F0;
+          opacity: 1;
+          position: absolute;
+          margin-top:34px;
+          margin-left: 61px;
+          float: left;
+          }
+    ul{
+        float: left;
+        list-style-type: none;
+        font: 24px Helvetica;
+        text-align: left;
+        color:#2EB738;
+        letter-spacing: 0;
+        opacity: 1;
+        margin-top:187px;
+        
+    }
+
+    ul.up{
+           float: left;
+           margin-top:187px;
+           margin-left:40px;
+           line-height: 10px;
+          }
+    ul.down{
+           float: right;
+           margin-top:64px;
+           margin-right:40px;
+     
+          }
+    li{
+        margin-top:8px;
+        width:105px;
+        height:33px;
+    }
+
+    #last{
+           position: absolute;
+           width:1280px;
+           height:34px;
+           background:#2EB738;
+           top:1300px;           
+    }
+    .lastP{
+           width:1000px;
+           height:34px;
+           color:#F0F0F0 ;
+           text-align: left;
+           margin-left: 790px;;
+          }
+
+    /* </style> */

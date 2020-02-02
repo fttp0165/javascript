@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="text">
+    <input type="button" id="send" value="送出">
+    <ul id="list">
+
+    </ul>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDXf7FzDXsH4gTHGJo8X25na1mSHN6OLZA",
+    authDomain: "nodetest-741a5.firebaseapp.com",
+    databaseURL: "https://nodetest-741a5.firebaseio.com",
+    projectId: "nodetest-741a5",
+    storageBucket: "nodetest-741a5.appspot.com",
+    messagingSenderId: "487081433208",
+    appId: "1:487081433208:web:c0d22f0120bda03d80758d",
+    measurementId: "G-Y47N6S1NXQ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  var db=firebase.database();
+  var todos=db.ref("todos")
+  var temp="";
+  var text=document.getElementById("text");
+  var list=document.getElementById("list");
+  var send=document.getElementById("send");
+  function del(ItemId)
+  {
+    // todos.child('-'+ItemId).remove();
+    console.log(ItemId.name);
+  }
+  send.addEventListener('click',function(e){
+    var gotData=text.value;
+    todos.push({context:gotData});
+  })
+
+  
+  todos.on("value",function(snapshot){
+    var temp="";
+    var str="";
+    var data=snapshot.val();
+    for(temp in data)
+      {
+      console.log(data[temp].context);
+      str+="<li>"+data[temp].context+'<input type="button" value="刪除" class="bt" name='+temp+' >'+"</li>";
+      }
+   list.innerHTML=str;
+   var Oli=document.getElementsByTagName("li");
+   console.log(Oli.length);
+   for(i=0;i<Oli.length;i++)
+      {
+        var oBt=Oli[i].getElementsByClassName("bt");//無法使用id id為獨一無二 改用calss
+        console.log(oBt);
+        //單獨適用get class 後無法對其操作.onclick 此時取得的 class唯一陣列須使其為 oBt[0] 
+        oBt[0].onclick=function(){
+                                console.log(this.name);
+                                todos.child(this.name).remove();
+                                }
+      
+      // for(j=0;j<oBt.length;j++)
+      //       {
+      //         oBt[i].onclick=function(){
+      //         console.log('aa');
+      //         }
+             }
+      }
+  )
+
+
+
+</script>
+    
+</body>
+</html>
