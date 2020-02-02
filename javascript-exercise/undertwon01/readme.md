@@ -10,7 +10,7 @@ This is a regular paragraph.
 
 ## 新手 JS 地下城 1F - 9x9 乘法表
 
-![9X9 Table]( https://github.com/fttp0165/javascript-exercise/blob/master/undertwon01/1F.PNG"9x9" )
+![9X9 Table]( https://github.com/fttp0165/javascript/blob/master/javascript-exercise/undertwon01/1F.PNG  "9x9" )
 
 
 ###BOSS 弱點
