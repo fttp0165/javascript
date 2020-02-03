@@ -10,7 +10,7 @@ This is a regular paragraph.
 
 ## 新手 JS 地下城 2F - 時鐘
 
-![9X9 Table](   "clock")
+![時鐘](https://github.com/fttp0165/javascript/blob/master/javascript-exercise/undertwon2F/clock.PNG   "clock")
 
 
 ### BOSS 弱點
