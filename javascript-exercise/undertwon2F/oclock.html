@@ -1,454 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <style type="text/css">
-     *{
-        margin:0;
-        padding:0;
-    }
-    #AllBoard{
-               width:1280px;
-               height:800px;
-               background: #293B29 0% 0% no-repeat padding-box;
-               overflow: hidden;
-             }
-    #BackGround{
-                float: left;
-                 width: 350px;
-                 height: 350px;
-                position: relative; 
-                top:225px;
-                right: 465px;
-                left:465px;
-                z-index:10;
-      
-              }
-    #second{
-             position: relative; 
-             float:left;
-             top:400px; /*470*/
-             left:280px;
-             width: 12px;
-             height: 80px;
-             z-index:30;
-             transform-origin:50% 0%;
-             background: 0% 0% no-repeat padding-box;
-             transform:rotate(180deg);
-             opacity: 1;
-      }  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>clock</title>
+  <link rel=stylesheet type="text/css" href="oclock.css">
+  <script type=text/javascript src="oclock.js"></script>
 
-      #min{
-             position: relative; 
-             float:left;
-             top: 310px;
-             left: 274px;
-             width: 8px;
-             height: 96px;
-             z-index:40;
-             transform-origin:0 80%;
-             background: 0% 0% no-repeat padding-box;
-             transform:rotate(0deg);
-             opacity: 1;
-      }  
-
-    #hour{
-             position: relative; 
-             float:left;
-             top: 323px;
-             left: 265px;
-             width: 8px;
-             height: 72px;
-             z-index:30;
-             transform-origin:50% 95%;
-             background: 0% 0% no-repeat padding-box;
-             transform:rotate(0deg);
-             opacity: 1;
-      
-
-    }
-    #oclock{
-                  float: left;
-                 width: 400px;
-                 height: 400px;
-                position: relative; 
-                top:0px;
-                left: -600px;
-                z-index:1500;
-
-
-    }
-    #currentTime{
-                                  position: relative; 
-                                  float:left;
-                                   top: 700px;
-                                   left: 10px;
-                                   width: 300px;
-                                  height: 80px;
-                                  background-color: plum;
-                                  z-index:1000;
-                                  border:5px solid #FF5511;
-                                 }
-
-
-      #Chour{
-                        float:left;
-                        width: 100px;
-                        height: 80px;
-                        background-color: yellow;
-      }
-      #Cmin{
-                         float:left;
-                        width: 100px;
-                        height: 80px;
-                        background-color: skyblue;
-      }
-      #Csecond{
-                        float:left;
-                        width: 100px;
-                        height: 80px;
-                        background-color: #E38EFF;
-                        color:black;
-      }
-     
-     #CsecondP{
-                              font-size: 50px;
-                              vertical-align: middle;
-                              line-height: 80px;
-                              text-align: center;
-                            
-     }
-     #CminP{
-                              font-size: 50px;
-                              vertical-align: middle;
-                              line-height: 80px;
-                              text-align: center;
-                            
-     }
-
-     #ChourP{
-                              font-size: 50px;
-                              vertical-align: middle;
-                              line-height: 80px;
-                              text-align: center;
-                            
-     }
-
-
-     #SetTime{
-                                 position: relative; 
-                                  float:left;
-                                   top: 600px;
-                                   left: -300px;
-                                   width: 300px;
-                                  height: 80px;
-                                  background-color: #FF8800;
-                                  z-index:1000;
-                                  border:5px solid 	#A3E0C3	;
-                                  z-index:1500;
-     }
-
-     #SetTime #timeH{
-                        position: relative; 
-                         top:10px;
-                        width: 60px;
-                        height: 40px;
-                        font-size: 50px;
-                        vertical-align: middle;
-                        line-height: 80px;
-                        text-align: center;
-                        border:5px solid 	#A3E0C3;
-                        background-color:yellow ;
-     }
-  
-     #SetTime #set{
-                        width: 50px;
-                        height: 30px;
-                        vertical-align: middle;
-                        line-height: 15px;
-                        text-align: center;
-                        border:5px solid  #A3E0C3;
-     }
-
-     #SetTime  #oIsAm{
-
-                        position: relative; 
-                        float:left;
-                        top:12px;
-                        left:-40px;
-                        width: 30px;
-                        height: 15px;
-                        font-weight:bold;
-                        font-size:12px;
-                        border:2px solid 	#A3E0C3;
-                        vertical-align: middle;
-                        text-align: center;
-                        line-height: 10px;
-                        background-color:yellow ;
-     }
-     #SetTime #timeM{
-                        position: relative; 
-                         top:10px;
-                        width: 60px;
-                        height: 40px;
-                        font-size: 50px;
-                        vertical-align: middle;
-                        line-height: 80px;
-                        text-align: center;
-                        border:5px solid 	#A3E0C3;
-                        background-color:skyblue ;
-     }
-     #SetTime #timeS{
-                        position: relative; 
-                         top:10px;
-                        width: 60px;
-                        height: 40px;
-                        font-size: 50px;
-                        vertical-align: middle;
-                        line-height: 80px;
-                        text-align: center;
-                        border:5px solid 	#A3E0C3;
-                        background-color:#E38EFF ;
-     }
-     #SetTime #Reset{
-                        position: relative; 
-                        float:left;
-                        left:222px;
-                        top:-5px;
-                        width: 60px;
-                        height: 30px;
-                        vertical-align: middle;
-                        line-height: 15px;
-                        text-align: center;
-                        border:5px solid  #A3E0C3;
-     }
-
-
-
-
-    </style>
-
-    <script type="text/javascript">
-    window.onload=function(){
-     
-      var secondPoint=document.getElementById('second');
-      var minPoint=document.getElementById('min');
-      var hourPoint=document.getElementById('hour');
-
-      //取得數位顯示標籤
-      var CCsecond=document.getElementById('CsecondP');
-      var CCmin=document.getElementById('CminP');
-      var CChour=document.getElementById('ChourP');
-      var oSet=document.getElementById('set');
-      var oRset=document.getElementById('Reset');
-      var otimeH=document.getElementById('timeH');
-      var otimeM=document.getElementById('timeM');
-      var otimeS=document.getElementById('timeS');
-      var  OAM=document.getElementById('oIsAm');
-
-
-      CCsecond.innerHTML=0;
-      CCmin.innerHTML=0;
-      CChour.innerHTML=0;
-      var angleFSec=180
-      var angleFmin=0;
-      var angleFhour=0;
-      var isAm=true;
-    
-
-      //----------------------------------------
-      //get time
-      //-----------------------------------------
-      var toDay= new Date();
-      var NowHour=(toDay.getHours())*3600;
-      var Nowmin=(toDay.getMinutes())*60;
-      var Nowsec=toDay.getSeconds();
-      if(toDay.getHours() == 12 & isAm=="true"){
-        isAm=false;
-        NowHour=(toDay.getHours())*3600;
-      }else if(toDay.getHours() >= 12 & isAm=="true")
-                  {
-                    isAm=false;
-                    NowHour=(toDay.getHours()-1)*3600;
-                  }else if(toDay.getHours() >=12 & isAm=="flase")
-                  {
-                    isAm=true;
-                    NowHour=(toDay.getHours()-1)*3600;
-                  }
-      oTotalsec=NowHour+Nowmin+Nowsec;
-
-
-      oSet.addEventListener('click',function(e){
-        
-      }
-
-
-
-
-    
-      //----------------------------------------
-      //Reset Time
-      //-----------------------------------------
-      oRset.addEventListener('click',function(e){
-      
-       NowHour=(toDay.getHours())*3600;
-       Nowmin=(toDay.getMinutes())*60;
-       Nowsec=toDay.getSeconds();
-      if(toDay.getHours()>=12 & OAM.value == 'true' ){
-      isAm=false;
-        NowHour=(toDay.getHours()-12)*3600;
-      }
-      oTotalsec=NowHour+Nowmin+Nowsec;
-      initTime();
-      FisAM();
-      })
-    
-
-      oSet.addEventListener('click',function(e){
-       toDay= new Date();
-       NowHour=parseInt((otimeH.value),10)*3600;
-       Nowmin=parseInt((otimeM.value),10)*60;
-       Nowsec=parseInt((otimeS.value),10);
-      if(otimeH.value >= 12 & isAm==false){
-       isAm=true;
-        NowHour=parseInt((otimeH.value-12),10)*3600;
-      }else if(otimeH.value > 12)
-              {
-               NowHour=parseInt((otimeH.value-12),10)*3600;
-               isAm=false;
-              }
-      isAm=true;
-      
-      oTotalsec=(NowHour+Nowmin+Nowsec);
-     
-      console.log(NowHour);
-      console.log(Nowmin);
-      console.log(Nowsec);
-      initTime();
-      FisAM();
-
-      })
-
-
-      var oChour=Math.floor(oTotalsec/3600);
-      var oCmin=Math.floor((oTotalsec/60)%60);
-      var oCsecond=Math.floor(oTotalsec%60);
-
-      function initTime(){
-      //----------------------------------------
-      //init Time
-      //----------------------------------------
-      // var oTotalsec=14100;
-       oChour=Math.floor(oTotalsec/3600);
-       oCmin=Math.floor((oTotalsec/60)%60);
-       oCsecond=Math.floor(oTotalsec%60);
-       //----------------------------------------
-      //init  Angle
-      //-----------------------------------------
-      angleFSec=180+(oCsecond*6);
-      if(angleFSec>=540){ angleFSec=180;}
-      angleFmin=oCmin*6;
-      angleFhour=(oChour*30)+Math.floor((angleFmin)/12);
-      console.log(angleFhour);
-      secondPoint.style.transform ='rotate('+angleFSec+'deg)';
-      minPoint.style.transform ='rotate('+angleFmin+'deg)';
-      hourPoint.style.transform ='rotate('+angleFhour+'deg)';
-      FisAM();
-      }
-      
-
-
-      function FisAM(){
-        if(isAm){
-                OAM.innerHTML="AM";
-               }else{
-                OAM.innerHTML="PM";
-                    }    
-      }
-
-      initTime();
-
-      setInterval(function(){
-                                                      oCsecond+=1;
-                                                      if(oCsecond>=60)
-                                                           {
-                                                             oCsecond=0;
-                                                             oCmin+=1;
-                                                             if(oCmin>=60)
-                                                                 {
-                                                                   oCmin=0;
-                                                                   console.log('oChour',oChour);
-                                                                   oChour+=1;
-                                                                   console.log('oChour',oChour);
-                                                                    if(oChour>=12 & isAm==false)
-                                                                       {
-                                                                        oChour=0;
-                                                                        isAm=!(isAm);
-                                                                        FisAM();
-                                                                       }else if(otimeH.value > 12)
-                                                                               {
-                                                                                NowHour=parseInt((otimeH.value-12),10)*3600;
-                                                                                isAm=!(isAm);
-                                                                                FisAM();
-                                                                                }
-                                                                  }
-                                                            }
-         
-                                                        angleFSec=180+(oCsecond*6);
-                                                        if(angleFSec>=540){ angleFSec=180;}
-                                                        angleFmin=oCmin*6;
-                                                        angleFhour=(oChour*30)+Math.floor((angleFmin)/12);
-                                                        console.log(angleFhour);
-                                                        secondPoint.style.transform ='rotate('+angleFSec+'deg)';
-                                                        minPoint.style.transform ='rotate('+angleFmin+'deg)';
-                                                        hourPoint.style.transform ='rotate('+angleFhour+'deg)';
-                       
-            
-                 //Digital sec
-
-                    CCsecond.innerHTML=(oCsecond);
-                    CCmin.innerHTML=parseInt(oCmin);
-                    CChour.innerHTML=parseInt(oChour);
-              
-
-                 
-
-           // secondPoint.style.transform ='rotate('+newAngle+')';
-            
-      },1000);
-
-    }
-    </script>
+ 
 </head>
+
 <body>
-     <div id="AllBoard">
+  <div id="AllBoard">
     <div id="lineX"></div>
     <div id="lineY"></div>
     <div id="currentTime">
-    <div id= "Chour"><p id="ChourP"></p></div>
-    <div id= "Cmin"><p id="CminP"></p></div>
-    <div id= "Csecond"><p id="CsecondP"></p></div>
+      <div id="showAM">
+        <p id="showAMP"></p>
+      </div>
+      <div id="Chour">
+        <p id="ChourP"></p>
+      </div>
+      <div id="Cmin">
+        <p id="CminP"></p>
+      </div>
+      <div id="Csecond">
+        <p id="CsecondP"></p>
+      </div>
     </div>
 
     <div id="SetTime">
-       <input id="timeH"  type="text" value="1">
-       <input id="timeM" type="text" value="50">
-       <input id="timeS"type="text" value="0">
-       <input id="set" type="button" value="Set">
-       <input id="Reset" type="button" value="Reset">
-       <input id="oIsAm" type="button" value="AM">
-      </div>
+      <input id="timeH" type="text" value="1">
+      <input id="timeM" type="text" value="50">
+      <input id="timeS" type="text" value="0">
+      <input id="set" type="button" value="Set">
+      <input id="Reset" type="button" value="Reset">
+      <input id="oIsAm" type="button" value="AM">
+    </div>
 
     <div id="oclock">
-     <img id="BackGround" src=".\picture\clock-bg.png">
-     <!-- <div id="circle"></div> -->
-     <img  id="second"  src=".\picture\second-hand.png"></img>
-     <img  id="min" src=".\picture\minute-hand.png"></img>
-     <img  id="hour" src=".\picture\hour-hand.png"></img>
+      <img id="BackGround" src=".\picture\clock-bg.png">
+      <!-- <div id="circle"></div> -->
+      <img id="second" src=".\picture\second-hand.png"></img>
+      <img id="min" src=".\picture\minute-hand.png"></img>
+      <img id="hour" src=".\picture\hour-hand.png"></img>
     </div>
-    </div>
+  </div>
 </body>
+
 </html>
