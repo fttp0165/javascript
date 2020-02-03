@@ -1,0 +1,203 @@
+*{
+        margin:0;
+        padding:0;
+    }
+    #AllBoard{
+               width:1280px;
+               height:800px;
+               background: #293B29 0% 0% no-repeat padding-box;
+               overflow: hidden;
+             }
+    #BackGround{
+                float: left;
+                 width: 350px;
+                 height: 350px;
+                position: relative; 
+                top:225px;
+                right: 465px;
+                left:465px;
+                z-index:10;
+      
+              }
+    #second{
+             position: relative; 
+             float:left;
+             top:400px; /*470*/
+             left:280px;
+             width: 12px;
+             height: 80px;
+             z-index:30;
+             transform-origin:50% 0%;
+             background: 0% 0% no-repeat padding-box;
+             transform:rotate(180deg);
+             opacity: 1;
+      }  
+
+      #min{
+             position: relative; 
+             float:left;
+             top: 305px;
+             left: 270px;
+             width: 8px;
+             height: 96px;
+             z-index:40;
+             transform-origin:0 100%;
+             background: 0% 0% no-repeat padding-box;
+             transform:rotate(0deg);
+             opacity: 1;
+      }  
+
+    #hour{
+             position: relative; 
+             float:left;
+             top: 323px;
+             left: 262px;
+             width: 8px;
+             height: 72px;
+             z-index:30;
+             transform-origin:0 100%;
+             background: 0% 0% no-repeat padding-box;
+             transform:rotate(0deg);
+             opacity: 1;
+      
+
+    }
+    #oclock{
+                  float: left;
+                 width: 400px;
+                 height: 400px;
+                position: relative; 
+                top:0px;
+                left: -600px;
+                z-index:1500;
+
+
+    }
+    #currentTime{
+                                  position: relative; 
+                                  float:left;
+                                   top: 700px;
+                                   left: 10px;
+                                   width: 300px;
+                                  height: 80px;
+                                  background-color: plum;
+                                  z-index:1000;
+                                  border:5px solid #FF5511;
+                                 }
+
+
+      #Chour{
+                        float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: yellow;
+      }
+      #Cmin{
+                         float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: skyblue;
+      }
+      #Csecond{
+                        float:left;
+                        width: 100px;
+                        height: 80px;
+                        background-color: #E38EFF;
+                        color:black;
+      }
+     
+     #CsecondP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+     #CminP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+
+     #ChourP{
+                              font-size: 50px;
+                              vertical-align: middle;
+                              line-height: 80px;
+                              text-align: center;
+                            
+     }
+
+
+     #SetTime{
+                                 position: relative; 
+                                  float:left;
+                                   top: 600px;
+                                   left: -300px;
+                                   width: 300px;
+                                  height: 80px;
+                                  background-color: #FF8800;
+                                  z-index:1000;
+                                  border:5px solid 	#A3E0C3	;
+                                  z-index:1500;
+     }
+
+     #SetTime .timeH{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:yellow ;
+     }
+  
+     #SetTime .set{
+                        width: 50px;
+                        height: 30px;
+                        vertical-align: middle;
+                        line-height: px;
+                        text-align: center;
+                        border:5px solid  #A3E0C3;
+     }
+     #SetTime .timeM{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:skyblue ;
+     }
+     #SetTime .timeS{
+                        position: relative; 
+                         top:10px;
+                        width: 60px;
+                        height: 40px;
+                        font-size: 50px;
+                        vertical-align: middle;
+                        line-height: 80px;
+                        text-align: center;
+                        border:5px solid 	#A3E0C3;
+                        background-color:#E38EFF ;
+     }
+     #SetTime .reset{
+                        position: relative; 
+                        float:left;
+                        left:222px;
+                        top:-5px;
+                        width: 60px;
+                        height: 30px;
+                        vertical-align: middle;
+                        line-height: px;
+                        text-align: center;
+                        border:5px solid  #A3E0C3;
+     }
+
